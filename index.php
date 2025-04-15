@@ -13,18 +13,28 @@
     <?php
     require_once "src/Livro.php";
 
-    $livroA = new Livro();
-    $livroB = new Livro();
+    $livroA = new Livro("o reino do amanhã","Alex Ross",50);
+    $livroB = new Livro("o grande conflito","ellen g white",400);
+?>
+    
+    
+    <h2>Acessando/lendo os dados do objeto</h2>
+<ul>
+    <li><b>Nome:</b><?=$livroA->getTitulo()?></li>
+    <li><b>Idade:</b><?=$livroA->getAutor()?></li>
+    <li><b>E-mail:</b><?=$livroA->getTitulo()?></li>
+    
 
-    $livroA -> setTitulo("o reino do amanhã");
-    $livroA -> setAutor("Alex Ross");
-    $livroA -> setPaginas(50);
+</ul>
+<ul>
+     <li><b>Nome:</b><?=$livroB->getTitulo()?></li>
+    <li><b>Idade:</b><?=$livroB->getAutor()?></li>
+    <li><b>E-mail:</b><?=$livroB->getPaginas()?></li>
+    
 
-    $livroB -> setTitulo("o grande conflito");
-    $livroB -> setAutor("ellen g white");
-    $livroB -> setPaginas(400); 
+</ul>
 
-    ?>
+    
 
     
 </body>
