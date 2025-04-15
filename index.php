@@ -22,7 +22,7 @@
 
     $livroB -> setTitulo("o grande conflito");
     $livroB -> setAutor("ellen g white");
-    $livroB -> setPaginas(200); 
+    $livroB -> setPaginas(400); 
 
     ?>
 
