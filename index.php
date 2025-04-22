@@ -6,7 +6,7 @@
     <title>Exercício 01</title>
 </head>
 <body>
-    <h1>Exercício 02</h1>
+    <h1>Exercício 0</h1>
     <hr>
     <p><i>Faça as chamadas e testes nesta página</i></p>
     
