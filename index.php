@@ -12,9 +12,13 @@
     
     <?php
     require_once "src/Livro.php";
+    require_once "src/literario.php";
+    require_once "src/tecnico.php";
+    require_once "enums/Formato.php";
+    require_once "enums/Genero.php";
 
-    $livroA = new Livro("o reino do amanhã","Alex Ross",50);
-    $livroB = new Livro("o grande conflito","ellen g white",400);
+    $livroA = new Livro("o reino do amanhã","Alex Ross",50,Genero::AVENTURA);
+    $livroB = new Livro("o grande conflito","ellen g white",400,Genero::DRAMA);
 ?>
     
     
@@ -23,6 +27,7 @@
     <li><b>Titulo:</b><?=$livroA->getTitulo()?></li>
     <li><b>Autor:</b><?=$livroA->getAutor()?></li>
     <li><b>Paginas:</b><?=$livroA->getTitulo()?></li>
+    <li><b>Genero:</b> <?=$livroA->getGenero()->name?></li>
     
 
 </ul>

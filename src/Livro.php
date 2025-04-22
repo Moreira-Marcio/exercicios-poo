@@ -3,15 +3,12 @@
 
 
 class Livro
-
-
-
-
 {
     //atributos ou propriedades
     private string $titulo;
     private string $autor;
     private int $paginas;
+    private Genero $genero;
 
     public function __construct(string $titulo, string $autor, int $paginas)
     {
