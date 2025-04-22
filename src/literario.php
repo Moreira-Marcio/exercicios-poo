@@ -1,42 +1,25 @@
-<?php 
+<?php
 
-class literario extends Livro 
+class Literario extends Livro
 {
-   private string $titulo;
-   private string $autor;
-   private Genero $genero;
 
-   public function __construct(string $titulo,string $autor,Genero $genero)
-   {
-      parent::__construct ($titulo , $autor);
+    private Genero $genero;
 
-      $this->setTitulo($titulo);
-      $this->setAutor($autor);
-      $this->setGenero($genero);
-   }
-
-   private function setGenero(GEnero $genero): void
-   {
-       $this-> genero= $genero;
-       
-   }
-
-   public function getGenero():Genero 
-   {
-       return $this-> genero;
-   }
+    public function __construct(string $titulo, string $autor, Genero $genero)
+    {
+        parent::__construct($titulo, $autor);
 
 
-   public function setTitulo(string $titulo): void
-   {
+        $this->setGenero($genero);
+    }
 
-        $this->titulo = $titulo;
-   }
+    private function setGenero(GEnero $genero): void
+    {
+        $this->genero = $genero;
+    }
 
-   public function setAutor(string $autor): void
-   {
-       $this->autor = $autor;
-   }
-    
-  
+    public function getGenero(): Genero
+    {
+        return $this->genero;
+    }
 }

@@ -7,14 +7,14 @@ class Livro
     //atributos ou propriedades
     private string $titulo;
     private string $autor;
-    private int $paginas;
-    private Genero $genero;
+  
+    
 
-    public function __construct(string $titulo, string $autor, int $paginas)
+    public function __construct(string $titulo, string $autor)
     {
         $this->setTitulo($titulo);
         $this->setAutor($autor);
-        $this->setPaginas($paginas);
+        
     }
     private function setTitulo(string $titulo): void
     {
@@ -26,10 +26,7 @@ class Livro
         $this->autor = $autor;
     }
 
-    private function setPaginas(int $paginas): void
-    {
-        $this->paginas = $paginas;
-    }
+  
 
     public function getTitulo(): string
     {
@@ -41,8 +38,5 @@ class Livro
         return $this->autor;
     }
 
-    public function getPaginas(): int
-    {
-        return $this->paginas;
-    }
+  
 }
