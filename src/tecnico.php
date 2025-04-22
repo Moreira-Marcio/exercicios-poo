@@ -5,7 +5,7 @@ class Tecnico extends Livro
 
     private Formato $formato;
 
-    public function __construct(string $titulo, string $autor, formato $formato)
+    public function __construct(string $titulo, string $autor, Formato $formato)
     {
         parent::__construct($titulo, $autor);
 
